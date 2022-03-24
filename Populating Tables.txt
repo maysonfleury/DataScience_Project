@@ -1,0 +1,9 @@
+To populate the database tables the following steps were taken:
+
+1. Get "Raw" data from World Bank or other source (only get data from the 9 required countries and in the 16 year time frame from 2005-2020)
+2. Transpose raw data into blank excel file with column names as attributes for various dimensions and their respetive primary keys. 
+3. Repeat process for all the data making sure that they follow the format of USA, CANADA, MEXICO, NIGER, SIERRA LEONE, CHAD, SRI LANKA, BANGLADESH, ETHIOPIA. 
+(this will make the allocation of foreign keys in the fact table significantly easier)
+4. Insert the data into the tables using "\copy <dimension-name> FROM <file-location> CSV HEADER;"
+
+
